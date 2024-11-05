@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -17,8 +17,4 @@ spec:
         image: nanajanashia/argocd-app:1.2
         ports:
         - containerPort: 8080
-      - name: myapp2
-        image: ayoussri1974/new-bindmount-apps-todo-app:latest
-        ports:
-        - containerPort: 8081
 
